@@ -1,0 +1,658 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<MainLayout title="YMASB – Trading, Construction & Maintenance in Malaysia">
+<Nav />
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-slides">
+    <div class="hero-slide active" style="background-image:url(/images/main-slider/slider3/slide1.jpg)">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="eyebrow" data-i18n="hero_s1_title">Top Global Commodity</span>
+        <h1 class="hero-title" data-i18n="hero_s1_title">Top Global Commodity</h1>
+        <p class="hero-desc" data-i18n="hero_s1_desc">Supplying trusted commodities worldwide with strong expertise in import & export, delivering excellence across industries.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-primary" data-i18n="hero_btn_quote">Get a Quote</a>
+          <a href="#projects" class="btn-secondary" data-i18n="hero_btn_projects">View Projects</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slide" style="background-image:url(/images/main-slider/slider3/slide2.jpg)">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="eyebrow" data-i18n="hero_s2_title">Driving Trade</span>
+        <h1 class="hero-title" data-i18n="hero_s2_title">Driving Trade</h1>
+        <p class="hero-desc" data-i18n="hero_s2_desc">From palm oil to rubber, we connect local resources to global markets with efficiency and reliability.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-primary" data-i18n="hero_btn_quote">Get a Quote</a>
+          <a href="#projects" class="btn-secondary" data-i18n="hero_btn_projects">View Projects</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slide" style="background-image:url(/images/main-slider/slider3/slide3.jpg)">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="eyebrow" data-i18n="hero_s3_title">Building Beyond Limits</span>
+        <h1 class="hero-title" data-i18n="hero_s3_title">Building Beyond Limits</h1>
+        <p class="hero-desc" data-i18n="hero_s3_desc">Comprehensive project management, construction, and maintenance solutions that shape progress and growth.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-primary" data-i18n="hero_btn_quote">Get a Quote</a>
+          <a href="#projects" class="btn-secondary" data-i18n="hero_btn_projects">View Projects</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-dots">
+    <button class="hero-dot active"></button>
+    <button class="hero-dot"></button>
+    <button class="hero-dot"></button>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="section-max about-grid">
+    <div class="about-images">
+      <div class="about-img-stack">
+        <img src="/images/gallery/portrait/pic4.png" alt="YMASB" class="about-img-1"/>
+        <img src="/images/gallery/portrait/pic5.png" alt="YMASB" class="about-img-2"/>
+      </div>
+    </div>
+    <div class="about-text">
+      <div class="about-since-box">
+        <span class="about-since-year" data-i18n="about_since">Since 2017</span>
+        <span class="about-since-sub" data-i18n="about_since_sub">committed to quality, safety, and integrity</span>
+      </div>
+      <span class="eyebrow" data-i18n="about_eyebrow">ABOUT US</span>
+      <h2 class="sec-title" data-i18n="about_title">Yahaya Mahmud Enterprise Sdn. Bhd.</h2>
+      <p class="sec-body" data-i18n="about_desc">The company was established on 25 August 2017 by Yahaya Bin Mahmud who has a combination of experience in rubber and palm oil trading, construction works, maintenance and project management.</p>
+      <div class="about-founder">
+        <img src="/images/Signature+Black.png" alt="Signature" class="signature-img"/>
+        <div>
+          <strong>Yahaya Mahmud</strong>
+          <span data-i18n="about_founder">Founder & CEO</span>
+        </div>
+      </div>
+      <a href="#contact" class="btn-primary" data-i18n="about_btn">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- SAFETY & QUALITY -->
+<section class="section section-dark">
+  <div class="section-max tc">
+    <span class="eyebrow" data-i18n="safety_eyebrow">EXCELLENCE</span>
+    <h2 class="sec-title" data-i18n="safety_title">Safety and Quality</h2>
+    <p class="sec-body" data-i18n="safety_desc">Our commitment to integrity and safety is at the core of everything we do.</p>
+  </div>
+  <div class="section-max safety-grid">
+    <div class="safety-card">
+      <img src="/images/services/1.png" alt="Quality"/>
+      <div class="safety-card-info">
+        <h4 data-i18n="safety_1_title">Quality</h4>
+        <p data-i18n="safety_1_desc">Trusted Quality — Delivering excellence beyond standards.</p>
+      </div>
+    </div>
+    <div class="safety-card">
+      <img src="/images/services/2.png" alt="Safety"/>
+      <div class="safety-card-info">
+        <h4 data-i18n="safety_2_title">Safety</h4>
+        <p data-i18n="safety_2_desc">Safety First — Protecting people and projects at every step.</p>
+      </div>
+    </div>
+    <div class="safety-card">
+      <img src="/images/services/3.png" alt="Integrity"/>
+      <div class="safety-card-info">
+        <h4 data-i18n="safety_3_title">Integrity & Professionalism</h4>
+        <p data-i18n="safety_3_desc">Integrity Matters — Building trust through honest work.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION -->
+<section class="section" id="mission">
+  <div class="section-max mission-grid">
+    <div class="mission-text">
+      <span class="eyebrow" data-i18n="mission_eyebrow">OUR MISSION</span>
+      <h2 class="sec-title" data-i18n="mission_title">Our Mission</h2>
+      <p class="sec-body" data-i18n="mission_desc">Our mission is to deliver quality products on time and within budget, while building long-term partnerships through innovation, teamwork, and integrity.</p>
+      <ul class="mission-list">
+        <li data-i18n="mission_list_1">Trading</li>
+        <li data-i18n="mission_list_2">Project Management</li>
+        <li data-i18n="mission_list_3">Maintenance Delivery</li>
+        <li data-i18n="mission_list_4">Construction</li>
+        <li data-i18n="mission_list_5">Import & Export Services</li>
+      </ul>
+    </div>
+    <div class="mission-img">
+      <img src="/images/mission.jpg" alt="Mission"/>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="section section-dark" id="partners">
+  <div class="section-max tc">
+    <span class="eyebrow" data-i18n="partners_eyebrow">PARTNERS</span>
+    <h2 class="sec-title" data-i18n="partners_title">Our Business Partners</h2>
+    <p class="sec-body" data-i18n="partners_desc">Trusted by leading brands</p>
+  </div>
+  <div class="section-max partners-track-wrap">
+    <div class="partners-track">
+      {Array.from({length: 2}, () =>
+        [1,2,3,4,5,6].map(i => (
+          <div class="partner-logo">
+            <img src={`/images/partners/partners-${i}.png`} alt={`Partner ${i}`}/>
+          </div>
+        ))
+      )}
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="section-max tc">
+    <span class="eyebrow" data-i18n="services_eyebrow">WHAT WE DO</span>
+    <h2 class="sec-title" data-i18n="services_title">Our Services</h2>
+    <p class="sec-body" data-i18n="services_desc">We are dedicated to providing the best services across industries.</p>
+  </div>
+  <div class="section-max svc-grid">
+    <div class="svc-card">
+      <div class="svc-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      </div>
+      <h4 data-i18n="svc_1_title">Trading</h4>
+      <p data-i18n="svc_1_desc">Specializing in palm oil, rubber, fertilizer, poultry, and meat.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="12" width="6" height="10"/><rect x="9" y="6" width="6" height="16"/><rect x="17" y="2" width="6" height="20"/></svg>
+      </div>
+      <h4 data-i18n="svc_2_title">Construction</h4>
+      <p data-i18n="svc_2_desc">Expertise in road construction, civil & structural projects.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+      </div>
+      <h4 data-i18n="svc_3_title">Fabrication & Renovation</h4>
+      <p data-i18n="svc_3_desc">High-quality fabrication & building solutions.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <h4 data-i18n="svc_4_title">Asset Maintenance</h4>
+      <p data-i18n="svc_4_desc">Comprehensive services to maintain and optimize your assets.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section section-dark" id="projects">
+  <div class="section-max tc">
+    <span class="eyebrow" data-i18n="projects_eyebrow">PORTFOLIO</span>
+    <h2 class="sec-title" data-i18n="projects_title">Our Projects</h2>
+  </div>
+  <div class="section-max">
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all" data-i18n="filter_all">All</button>
+      <button class="filter-btn" data-filter="cat-1" data-i18n="filter_1">Commodity Trading</button>
+      <button class="filter-btn" data-filter="cat-2" data-i18n="filter_2">Civil & Roadworks</button>
+      <button class="filter-btn" data-filter="cat-3" data-i18n="filter_3">Building & Renovation</button>
+      <button class="filter-btn" data-filter="cat-4" data-i18n="filter_4">Fabrication & Engineering</button>
+      <button class="filter-btn" data-filter="cat-5" data-i18n="filter_5">Asset Maintenance</button>
+    </div>
+    <div class="project-grid" id="projectGrid">
+      {["Rubber-1","Rubber-2","Rubber-3","Rubber-4","Rubber-5","Rubber-6"].map(name => (
+        <div class="project-item cat-1"><img src={`/images/services/service-projects/${name}.png`} alt={name}/></div>
+      ))}
+      {["Roadwork-1","Roadwork-2"].map(name => (
+        <div class="project-item cat-2"><img src={`/images/services/service-projects/${name}.png`} alt={name}/></div>
+      ))}
+      <div class="project-item cat-3"><img src="/images/services/service-projects/Building-1.png" alt="Building"/></div>
+      <div class="project-item cat-4"><img src="/images/services/service-projects/Fabrication-1.png" alt="Fabrication"/></div>
+      <div class="project-item cat-5"><img src="/images/services/service-projects/Asset-1.png" alt="Asset"/></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE & PROFILE -->
+<section class="section" id="experience">
+  <div class="section-max exp-grid">
+    <div class="exp-left">
+      <div class="profile-box">
+        <div class="profile-download">
+          <h4 data-i18n="profile_title">Company Profile</h4>
+          <p data-i18n="profile_desc">Discover more about us — download our company profile.</p>
+          <a href="/images/download/YAHAYA-MAHMUD-PROFILE-(LATEST).pdf" class="btn-primary" data-i18n="profile_btn" download>Download</a>
+        </div>
+        <div class="profile-help">
+          <h4 data-i18n="help_title">Let's help you!</h4>
+          <p data-i18n="help_desc">If you have any questions about our services, projects, or partnerships, feel free to reach out.</p>
+          <a href="#contact" class="btn-secondary" data-i18n="help_btn">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="exp-right">
+      <span class="eyebrow" data-i18n="exp_eyebrow">PROVEN TRACK</span>
+      <h3 class="sec-title" data-i18n="exp_title">8 Years of Experience</h3>
+      <div class="progress-list">
+        <div class="prog-item"><span data-i18n="exp_1">Trading & Export</span><div class="prog-bar"><div class="prog-fill" style="--w:97%"><span>97%</span></div></div></div>
+        <div class="prog-item"><span data-i18n="exp_2">Construction & Civil Works</span><div class="prog-bar"><div class="prog-fill" style="--w:94%"><span>94%</span></div></div></div>
+        <div class="prog-item"><span data-i18n="exp_3">Project Management</span><div class="prog-bar"><div class="prog-fill" style="--w:93%"><span>93%</span></div></div></div>
+        <div class="prog-item"><span data-i18n="exp_4">Maintenance & Asset Care</span><div class="prog-bar"><div class="prog-fill" style="--w:92%"><span>92%</span></div></div></div>
+        <div class="prog-item"><span data-i18n="exp_5">Fabrication & Engineering</span><div class="prog-bar"><div class="prog-fill" style="--w:91%"><span>91%</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="section section-dark" id="timeline">
+  <div class="section-max tc">
+    <span class="eyebrow" data-i18n="timeline_eyebrow">OUR JOURNEY</span>
+    <h2 class="sec-title" data-i18n="timeline_title">About Summary</h2>
+  </div>
+  <div class="section-max timeline">
+    <div class="tl-item">
+      <div class="tl-year">2017</div>
+      <div class="tl-content">
+        <img src="/images/gallery/portrait/pic4.png" alt="2017" class="tl-img"/>
+        <div>
+          <h4 data-i18n="tl_2017_title">Inception</h4>
+          <p data-i18n="tl_2017_desc">Yahaya Mahmud Enterprise Sdn. Bhd. was established, focusing on trading palm oil and rubber.</p>
+        </div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-year">2019</div>
+      <div class="tl-content">
+        <img src="/images/gallery/portrait/pic7.png" alt="2019" class="tl-img"/>
+        <div>
+          <h4 data-i18n="tl_2019_title">Diversification</h4>
+          <p data-i18n="tl_2019_desc">Expanded into fertilizer, poultry & meat trading, strengthening supply chain and local market presence.</p>
+        </div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-year">2021</div>
+      <div class="tl-content">
+        <img src="/images/gallery/portrait/pic6.png" alt="2021" class="tl-img"/>
+        <div>
+          <h4 data-i18n="tl_2021_title">Construction Division</h4>
+          <p data-i18n="tl_2021_desc">Ventured into civil, structural, and building construction, including renovation and fabrication works.</p>
+        </div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-year">2023</div>
+      <div class="tl-content">
+        <img src="/images/gallery/portrait/pic5.png" alt="2023" class="tl-img"/>
+        <div>
+          <h4 data-i18n="tl_2023_title">Project Management & Maintenance</h4>
+          <p data-i18n="tl_2023_desc">Introduced asset maintenance and project management services, delivering quality with integrity and safety.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ & SOLUTIONS -->
+<section class="section" id="faq">
+  <div class="section-max faq-grid">
+    <div>
+      <span class="eyebrow" data-i18n="faq_eyebrow">FAQ</span>
+      <h2 class="sec-title" data-i18n="faq_title">Frequently Asked Questions</h2>
+      <div class="accordion">
+        <div class="acc-item open">
+          <button class="acc-header"><span data-i18n="faq_1_q">What industries do you serve?</span><span class="acc-icon">+</span></button>
+          <div class="acc-body"><p data-i18n="faq_1_a">We focus on trading Palm Oil, Rubber, Fertilizer, Poultry & Meat, as well as Construction, Project Management, and Maintenance.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-header"><span data-i18n="faq_2_q">Do you provide import and export services?</span><span class="acc-icon">+</span></button>
+          <div class="acc-body"><p data-i18n="faq_2_a">Yes, we have extensive experience in local, import, and export trading.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-header"><span data-i18n="faq_3_q">How do you ensure quality and safety?</span><span class="acc-icon">+</span></button>
+          <div class="acc-body"><p data-i18n="faq_3_a">We adhere to over 50 international safety and quality standards.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-header"><span data-i18n="faq_4_q">Can you handle large-scale projects?</span><span class="acc-icon">+</span></button>
+          <div class="acc-body"><p data-i18n="faq_4_a">Absolutely. Our team delivers on time and within budget.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-header"><span data-i18n="faq_5_q">Where are your operations based?</span><span class="acc-icon">+</span></button>
+          <div class="acc-body"><p data-i18n="faq_5_a">We are headquartered in Malaysia, serving both local and international markets.</p></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <span class="eyebrow" data-i18n="solution_eyebrow">SOLUTIONS</span>
+      <h2 class="sec-title" data-i18n="solution_title">Our Solution</h2>
+      <div class="sol-cards">
+        <div class="sol-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:32px;height:32px;color:var(--primary)"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          <h4 data-i18n="sol_1_title">Global Reach</h4>
+          <p data-i18n="sol_1_desc">Strong trading network connecting local commodities to international markets.</p>
+        </div>
+        <div class="sol-card sol-card-dark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:32px;height:32px;color:var(--primary)"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          <h4 data-i18n="sol_2_title">Sustainability</h4>
+          <p data-i18n="sol_2_desc">Commitment to long-term partnerships and contributions to the communities we serve.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section section-dark" id="contact">
+  <div class="section-max tc">
+    <span class="eyebrow" data-i18n="contact_eyebrow">GET IN TOUCH</span>
+    <h2 class="sec-title" data-i18n="contact_title">Contact Us</h2>
+  </div>
+  <div class="section-max contact-grid">
+    <form id="waForm" class="contact-form">
+      <input type="text" name="username" placeholder="Name" data-i18n-ph="contact_name" required/>
+      <input type="email" name="email" placeholder="Email" data-i18n-ph="contact_email" required/>
+      <input type="tel" name="phone" placeholder="Phone" data-i18n-ph="contact_phone" required/>
+      <textarea name="message" placeholder="Message" data-i18n-ph="contact_message" rows="4" required></textarea>
+      <button type="submit" class="btn-primary" data-i18n="contact_send">Send via WhatsApp</button>
+    </form>
+    <div class="contact-info-box">
+      <div class="ci-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px;height:20px"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        <div><strong>Phone</strong><p>+6011-5500 8889</p></div>
+      </div>
+      <div class="ci-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px;height:20px"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <div><strong>Email</strong><p>admin@ymasb.com</p></div>
+      </div>
+      <div class="ci-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px;height:20px"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div><strong>Address</strong><p>Lot No 130, Kuala Ketil Commercial Center (KKCC), 09300 Kuala Ketil, Kedah</p></div>
+      </div>
+      <div class="ci-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px;height:20px"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <div><strong>Hours</strong><p>Mon-Fri : 10.00am - 6.00pm</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHATSAPP FLOAT -->
+<a class="wa-float" href="https://wa.me/601155008889" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<Footer />
+</MainLayout>
+
+<script>
+// Hero Slideshow
+const slides = document.querySelectorAll('.hero-slide');
+const dots = document.querySelectorAll('.hero-dot');
+let current = 0;
+function showSlide(i: number) {
+  slides.forEach(s => s.classList.remove('active'));
+  dots.forEach(d => d.classList.remove('active'));
+  slides[i]?.classList.add('active');
+  dots[i]?.classList.add('active');
+  current = i;
+}
+setInterval(() => showSlide((current + 1) % slides.length), 4000);
+dots.forEach((d, i) => d.addEventListener('click', () => showSlide(i)));
+
+// Project Filter
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.getAttribute('data-filter')!;
+    document.querySelectorAll('.project-item').forEach(item => {
+      const el = item as HTMLElement;
+      el.style.display = (filter === 'all' || el.classList.contains(filter)) ? '' : 'none';
+    });
+  });
+});
+
+// Accordion
+document.querySelectorAll('.acc-header').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement!;
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.acc-item').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  });
+});
+
+// WhatsApp Form
+const waForm = document.getElementById('waForm') as HTMLFormElement;
+if (waForm) {
+  waForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const f = new FormData(waForm);
+    const name = (f.get('username') as string || '').trim();
+    const email = (f.get('email') as string || '').trim();
+    let phone = (f.get('phone') as string || '').replace(/\D/g, '');
+    if (phone.startsWith('0')) phone = '60' + phone.slice(1);
+    const msg = (f.get('message') as string || '').trim();
+    if (!name || !email || !phone || !msg) return;
+    const text = `Assalamualaikum, saya hantar pertanyaan.\n\nNama: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMesej:\n${msg}`;
+    window.open(`https://wa.me/601155008889?text=${encodeURIComponent(text)}`, '_blank');
+  });
+}
+
+// Progress bar animation
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll<HTMLElement>('.prog-fill').forEach(bar => {
+        bar.style.width = bar.style.getPropertyValue('--w');
+      });
+    }
+  });
+}, { threshold: 0.3 });
+const expSection = document.getElementById('experience');
+if (expSection) observer.observe(expSection);
+</script>
+
+<style>
+/* HERO */
+.hero{position:relative;height:100vh;min-height:600px;overflow:hidden}
+.hero-slide{
+  position:absolute;inset:0;background-size:cover;background-position:center;
+  opacity:0;transition:opacity 1s ease;
+}
+.hero-slide.active{opacity:1}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,.7) 0%,rgba(0,0,0,.4) 100%)}
+.hero-content{
+  position:relative;z-index:2;max-width:800px;margin:0 auto;
+  padding:0 48px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;
+  height:100%;
+}
+.hero-title{font-size:clamp(36px,5vw,72px);font-weight:900;color:#fff;text-transform:uppercase;line-height:1.1;margin-bottom:20px;letter-spacing:-1px}
+.hero-desc{font-size:18px;color:rgba(255,255,255,.8);line-height:1.7;margin-bottom:32px;max-width:600px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.hero-dots{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:10}
+.hero-dot{width:12px;height:12px;border-radius:50%;border:2px solid rgba(255,255,255,.5);background:transparent;cursor:pointer;transition:.3s}
+.hero-dot.active{background:var(--primary);border-color:var(--primary)}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:64px;align-items:center}
+.about-img-stack{position:relative;height:480px}
+.about-img-1{width:70%;height:75%;object-fit:cover;border-radius:16px;position:absolute;top:0;left:0;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.about-img-2{width:55%;height:55%;object-fit:cover;border-radius:16px;position:absolute;bottom:0;right:0;border:4px solid var(--bg);box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.about-since-box{
+  background:var(--bg3);border:1px solid var(--border);border-radius:12px;
+  padding:16px 20px;margin-bottom:24px;display:inline-block;
+}
+.about-since-year{font-size:22px;font-weight:900;color:var(--primary);display:block}
+.about-since-sub{font-size:12px;color:var(--muted);text-transform:capitalize}
+.about-founder{display:flex;align-items:center;gap:16px;margin:24px 0}
+.signature-img{height:40px;width:auto;filter:invert(1);opacity:.7}
+:global(html[data-theme="light"]) .signature-img{filter:none}
+.about-founder strong{display:block;font-size:14px;color:var(--white)}
+.about-founder span{font-size:12px;color:var(--muted)}
+
+/* SAFETY */
+.section-dark{background:var(--bg2)}
+.safety-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.safety-card{border-radius:16px;overflow:hidden;border:1px solid var(--border);transition:transform .3s,box-shadow .3s}
+.safety-card:hover{transform:translateY(-4px);box-shadow:0 20px 60px rgba(0,0,0,.2)}
+.safety-card img{width:100%;height:240px;object-fit:cover}
+.safety-card-info{padding:24px}
+.safety-card-info h4{font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px}
+.safety-card-info p{font-size:13px;color:var(--muted);line-height:1.6}
+
+/* MISSION */
+.mission-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.mission-list{list-style:none;margin-top:20px;display:flex;flex-direction:column;gap:10px}
+.mission-list li{font-size:14px;color:var(--muted2);padding-left:20px;position:relative}
+.mission-list li::before{content:'';position:absolute;left:0;top:7px;width:8px;height:8px;background:var(--primary);border-radius:2px}
+.mission-img{border-radius:16px;overflow:hidden}
+.mission-img img{width:100%;height:400px;object-fit:cover}
+
+/* PARTNERS */
+.partners-track-wrap{overflow:hidden;margin-top:48px;-webkit-mask:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.partners-track{display:flex;gap:48px;animation:scroll-partners 20s linear infinite;width:max-content}
+@keyframes scroll-partners{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.partner-logo{flex-shrink:0}
+.partner-logo img{height:60px;width:auto;opacity:.7;transition:opacity .3s}
+.partner-logo img:hover{opacity:1}
+
+/* SERVICES */
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:48px}
+.svc-card{
+  background:var(--bg2);border:1px solid var(--border);border-radius:16px;
+  padding:32px 24px;text-align:center;transition:transform .3s,border-color .3s;
+}
+.svc-card:hover{transform:translateY(-4px);border-color:var(--primary)}
+.svc-icon{width:56px;height:56px;border-radius:12px;background:rgba(212,160,23,.1);display:flex;align-items:center;justify-content:center;margin:0 auto 20px}
+.svc-icon svg{width:28px;height:28px;color:var(--primary)}
+.svc-card h4{font-size:15px;font-weight:700;color:var(--white);margin-bottom:8px}
+.svc-card p{font-size:13px;color:var(--muted);line-height:1.6}
+
+/* PROJECTS */
+.filter-bar{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:32px}
+.filter-btn{
+  background:var(--bg3);border:1px solid var(--border);border-radius:20px;
+  color:var(--muted2);font-size:12px;font-weight:600;padding:8px 18px;
+  cursor:pointer;transition:.2s;font-family:var(--font);
+}
+.filter-btn:hover,.filter-btn.active{background:var(--primary);color:#000;border-color:var(--primary)}
+.project-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.project-item{border-radius:12px;overflow:hidden;transition:transform .3s}
+.project-item:hover{transform:scale(1.03)}
+.project-item img{width:100%;height:220px;object-fit:cover;display:block}
+
+/* EXPERIENCE */
+.exp-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.profile-box{display:grid;grid-template-columns:1fr 1fr;gap:2px;border-radius:16px;overflow:hidden}
+.profile-download{background:var(--primary);padding:32px;color:#000}
+.profile-download h4{font-size:18px;font-weight:800;margin-bottom:8px}
+.profile-download p{font-size:13px;margin-bottom:16px;color:rgba(0,0,0,.7)}
+.profile-download .btn-primary{background:#000;color:var(--primary)}
+.profile-download .btn-primary:hover{background:#222}
+.profile-help{background:var(--bg3);padding:32px}
+.profile-help h4{font-size:18px;font-weight:800;color:var(--white);margin-bottom:8px}
+.profile-help p{font-size:13px;color:var(--muted);margin-bottom:16px;line-height:1.6}
+.progress-list{margin-top:24px;display:flex;flex-direction:column;gap:20px}
+.prog-item span:first-child{font-size:13px;font-weight:600;color:var(--white);display:block;margin-bottom:8px}
+.prog-bar{height:8px;background:var(--bg3);border-radius:4px;overflow:visible;position:relative}
+.prog-fill{height:100%;background:linear-gradient(90deg,var(--primary),var(--primary2));border-radius:4px;width:0;transition:width 1.5s ease;position:relative}
+.prog-fill span{position:absolute;right:0;top:-22px;font-size:12px;font-weight:700;color:var(--primary2)}
+
+/* TIMELINE */
+.timeline{margin-top:48px;display:flex;flex-direction:column;gap:32px}
+.tl-item{display:flex;gap:24px;align-items:flex-start}
+.tl-year{
+  font-size:20px;font-weight:900;color:var(--primary);
+  min-width:80px;padding-top:12px;
+  border-right:2px solid var(--border);padding-right:20px;text-align:right;
+}
+.tl-content{display:flex;gap:20px;align-items:center;flex:1;
+  background:var(--bg3);border:1px solid var(--border);border-radius:16px;padding:20px;
+  transition:transform .3s;
+}
+.tl-content:hover{transform:translateX(4px)}
+.tl-img{width:80px;height:80px;object-fit:cover;border-radius:12px;flex-shrink:0}
+.tl-content h4{font-size:15px;font-weight:700;color:var(--white);margin-bottom:6px}
+.tl-content p{font-size:13px;color:var(--muted);line-height:1.6}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.accordion{display:flex;flex-direction:column;gap:8px;margin-top:24px}
+.acc-item{border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.acc-header{
+  width:100%;display:flex;justify-content:space-between;align-items:center;
+  padding:16px 20px;background:var(--bg2);border:none;cursor:pointer;
+  font-size:14px;font-weight:600;color:var(--white);font-family:var(--font);text-align:left;
+}
+.acc-icon{font-size:20px;color:var(--primary);transition:transform .3s}
+.acc-item.open .acc-icon{transform:rotate(45deg)}
+.acc-body{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.acc-item.open .acc-body{max-height:200px}
+.acc-body p{padding:0 20px 16px;font-size:13px;color:var(--muted);line-height:1.7}
+.sol-cards{display:flex;flex-direction:column;gap:16px;margin-top:24px}
+.sol-card{background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:28px;transition:transform .3s}
+.sol-card:hover{transform:translateY(-2px)}
+.sol-card-dark{background:var(--bg3)}
+.sol-card h4{font-size:15px;font-weight:700;color:var(--white);margin:12px 0 8px}
+.sol-card p{font-size:13px;color:var(--muted);line-height:1.6}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;margin-top:32px}
+.contact-form{display:flex;flex-direction:column;gap:12px}
+.contact-form input,.contact-form textarea{
+  padding:14px 18px;background:var(--bg3);border:1px solid var(--border);
+  border-radius:10px;color:var(--white);font-size:14px;font-family:var(--font);
+  resize:none;transition:border-color .2s;
+}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:var(--muted)}
+.contact-form input:focus,.contact-form textarea:focus{outline:none;border-color:var(--primary)}
+:global(html[data-theme="light"]) .contact-form input,
+:global(html[data-theme="light"]) .contact-form textarea{background:#fff;border-color:rgba(0,0,0,.12);color:#1a1a2e}
+:global(html[data-theme="light"]) .contact-form input::placeholder,
+:global(html[data-theme="light"]) .contact-form textarea::placeholder{color:rgba(0,0,0,.3)}
+.contact-info-box{display:flex;flex-direction:column;gap:24px}
+.ci-item{display:flex;gap:14px;align-items:flex-start}
+.ci-item svg{color:var(--primary);flex-shrink:0;margin-top:2px}
+.ci-item strong{font-size:14px;color:var(--white);display:block;margin-bottom:4px}
+.ci-item p{font-size:13px;color:var(--muted);line-height:1.5}
+
+/* WHATSAPP FLOAT */
+.wa-float{
+  position:fixed;bottom:24px;right:24px;z-index:90;
+  width:56px;height:56px;border-radius:50%;background:#25d366;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 20px rgba(37,211,102,.4);transition:transform .2s;
+}
+.wa-float:hover{transform:scale(1.1)}
+.wa-float svg{width:28px;height:28px;color:#fff}
+
+/* RESPONSIVE */
+@media(max-width:960px){
+  .about-grid,.mission-grid,.exp-grid,.faq-grid,.contact-grid{grid-template-columns:1fr}
+  .safety-grid{grid-template-columns:1fr}
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .project-grid{grid-template-columns:repeat(2,1fr)}
+  .profile-box{grid-template-columns:1fr}
+  .about-img-stack{height:300px}
+  .hero-content{padding:0 20px}
+}
+@media(max-width:480px){
+  .svc-grid{grid-template-columns:1fr}
+  .project-grid{grid-template-columns:1fr}
+  .tl-item{flex-direction:column;gap:12px}
+  .tl-year{border-right:none;text-align:left;padding-right:0;min-width:auto}
+}
+</style>

@@ -1,0 +1,146 @@
+
+<footer>
+  <!-- CTA Bar -->
+  <div class="cta-bar">
+    <div class="cta-inner">
+      <div>
+        <h4 data-i18n="cta_title">Stay Connected With Us</h4>
+        <p data-i18n="cta_desc">Get the latest updates on our services, projects, and trading opportunities.</p>
+      </div>
+      <div class="newsletter-form">
+        <input type="email" placeholder="your@email.com"/>
+        <button data-i18n="footer_subscribe">Subscribe</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-grid">
+    <div>
+      <a class="footer-brand" href="#">
+        <img class="footer-logo-img" src="/images/logo.png" alt="YMASB Logo"/>
+        <div class="footer-brand-name">
+          <strong>YAHAYA MAHMUD ENTERPRISE SDN. BHD.</strong>
+          <span>PP031452 (CIDB)</span>
+        </div>
+      </a>
+      <p class="footer-desc" data-i18n="footer_desc">Your trusted partner in trading, construction, and project management.</p>
+      <div class="social-row">
+        <a class="social-btn" href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor" style="width:14px;height:14px"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="social-btn" href="#" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" style="width:14px;height:14px"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_contact">Contact Us</h4>
+      <ul>
+        <li>Lot No 130, Kuala Ketil Commercial Center (KKCC), 09300 Kuala Ketil, Kedah</li>
+        <li>admin@ymasb.com</li>
+        <li>+6011-5500 8889</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_links">Useful Links</h4>
+      <ul class="footer-links-list">
+        <li><a href="#about" data-i18n="nav_about">About</a></li>
+        <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+        <li><a href="#timeline" data-i18n="nav_timeline">Timeline</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_commitment">Our Commitment</h4>
+      <div class="commit-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px;height:20px;flex-shrink:0;color:var(--primary)"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <div>
+          <strong data-i18n="footer_integrity">Integrity & Safety</strong>
+          <p data-i18n="footer_integrity_desc">Honest, compliant, and safety-first in every operation.</p>
+        </div>
+      </div>
+      <div class="commit-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px;height:20px;flex-shrink:0;color:var(--primary)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <div>
+          <strong data-i18n="footer_quality">Quality & Reliability</strong>
+          <p data-i18n="footer_quality_desc">Consistent results that meet standards and timelines.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">&copy; <span id="footerYear"></span> Yahaya Mahmud Enterprise Sdn. Bhd. All rights reserved.</p>
+    <p class="footer-copy">Kuala Ketil, Kedah, Malaysia</p>
+    <p class="footer-copy">Design by <a href="https://webmyservices.my" target="_blank" rel="noopener" class="footer-credit">WebMy Services</a></p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('footerYear')!.textContent = new Date().getFullYear().toString();
+</script>
+
+<style>
+footer{
+  background:var(--bg2);border-top:1px solid var(--border);
+  position:relative;z-index:1;
+}
+.cta-bar{background:var(--primary);padding:0 48px}
+.cta-inner{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:28px 0;gap:24px;flex-wrap:wrap}
+.cta-bar h4{font-size:16px;font-weight:800;color:#000;margin-bottom:4px}
+.cta-bar p{font-size:13px;color:rgba(0,0,0,.7)}
+.newsletter-form{display:flex;gap:8px}
+.newsletter-form input{
+  padding:10px 14px;background:rgba(0,0,0,.1);border:1px solid rgba(0,0,0,.15);
+  border-radius:8px;color:#000;font-size:13px;font-family:var(--font);min-width:220px;
+}
+.newsletter-form input::placeholder{color:rgba(0,0,0,.4)}
+.newsletter-form input:focus{outline:none;border-color:rgba(0,0,0,.3)}
+.newsletter-form button{
+  background:#000;color:var(--primary);border:none;
+  padding:10px 16px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;
+  font-family:var(--font);transition:background .2s;white-space:nowrap;
+}
+.newsletter-form button:hover{background:#222}
+
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 0.8fr 1.2fr;gap:40px;padding:48px 48px 32px}
+.footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:16px;text-decoration:none}
+.footer-logo-img{height:32px;width:auto;flex-shrink:0}
+.footer-brand-name strong{display:block;font-size:11px;font-weight:800;color:var(--white)}
+.footer-brand-name span{font-size:10px;color:var(--muted)}
+.footer-desc{font-size:13px;color:var(--muted);line-height:1.8;margin-bottom:20px;max-width:320px}
+.social-row{display:flex;gap:8px}
+.social-btn{
+  width:34px;height:34px;border-radius:8px;
+  border:1px solid var(--border2);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--muted2);text-decoration:none;transition:.2s;
+}
+.social-btn:hover{border-color:var(--primary);color:var(--white);background:rgba(212,160,23,.1)}
+.footer-col h4{font-size:12px;font-weight:700;color:var(--muted2);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:18px}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-col li{font-size:13px;color:var(--muted);line-height:1.6}
+.footer-links-list a{font-size:13px;color:var(--muted);text-decoration:none;transition:color .2s}
+.footer-links-list a:hover{color:var(--white)}
+.commit-item{display:flex;gap:12px;margin-bottom:16px}
+.commit-item strong{font-size:13px;color:var(--white);display:block;margin-bottom:4px}
+.commit-item p{font-size:12px;color:var(--muted);line-height:1.5}
+.footer-bottom{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:24px 48px;border-top:1px solid var(--border);
+  flex-wrap:wrap;gap:8px;
+}
+.footer-copy{font-size:12px;color:var(--muted)}
+.footer-credit{color:var(--primary2);text-decoration:none;font-weight:600;transition:color .2s}
+.footer-credit:hover{color:var(--primary);text-decoration:underline}
+
+:global(html[data-theme="light"]) .footer-brand-name strong{color:#1a1a2e}
+:global(html[data-theme="light"]) .social-btn{color:rgba(26,26,46,.5);border-color:rgba(0,0,0,.12)}
+:global(html[data-theme="light"]) .social-btn:hover{color:var(--primary);border-color:var(--primary)}
+
+@media(max-width:960px){
+  .cta-bar{padding:0 20px}
+  .cta-inner{flex-direction:column;text-align:center}
+  .footer-grid{grid-template-columns:1fr;gap:32px;padding:48px 20px 24px}
+  .footer-bottom{flex-direction:column;text-align:center;padding:24px 20px}
+}
+</style>

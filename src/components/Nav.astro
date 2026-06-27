@@ -1,0 +1,387 @@
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="#">
+      <img class="nav-logo" src="/images/logo.png" alt="YMASB Logo"/>
+      <div class="nav-brand-text">
+        <strong>YAHAYA MAHMUD ENTERPRISE SDN. BHD.</strong>
+        <span>PP031452 (CIDB)</span>
+      </div>
+    </a>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#about" data-i18n="nav_about">About</a>
+      <a href="#services" data-i18n="nav_services">Services</a>
+      <a href="#projects" data-i18n="nav_projects">Projects</a>
+      <a href="#timeline" data-i18n="nav_timeline">Timeline</a>
+      <a href="#faq" data-i18n="nav_faq">FAQ</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </div>
+
+    <div class="nav-actions">
+      <button class="toggle-btn" id="langToggle" aria-label="Toggle language">EN</button>
+      <button class="toggle-btn" id="themeToggle" aria-label="Toggle theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<script>
+const translations: Record<string, Record<string, string>> = {
+  en: {
+    nav_about: "About",
+    nav_services: "Services",
+    nav_projects: "Projects",
+    nav_timeline: "Timeline",
+    nav_faq: "FAQ",
+    nav_contact: "Contact",
+    hero_s1_title: "Top Global Commodity",
+    hero_s1_desc: "Supplying trusted commodities worldwide with strong expertise in import & export, delivering excellence across industries.",
+    hero_s2_title: "Driving Trade",
+    hero_s2_desc: "From palm oil to rubber, we connect local resources to global markets with efficiency and reliability.",
+    hero_s3_title: "Building Beyond Limits",
+    hero_s3_desc: "Comprehensive project management, construction, and maintenance solutions that shape progress and growth.",
+    hero_btn_quote: "Get a Quote",
+    hero_btn_projects: "View Projects",
+    about_eyebrow: "ABOUT US",
+    about_since: "Since 2017",
+    about_since_sub: "committed to quality, safety, and integrity",
+    about_title: "Yahaya Mahmud Enterprise Sdn. Bhd.",
+    about_desc: "The company was established on 25 August 2017 by Yahaya Bin Mahmud who has a combination of experience in rubber and palm oil trading, construction works, maintenance and project management.",
+    about_founder: "Founder & CEO",
+    about_btn: "Get in Touch",
+    safety_eyebrow: "EXCELLENCE",
+    safety_title: "Safety and Quality",
+    safety_desc: "Our commitment to integrity and safety is at the core of everything we do. We adhere to over 50 of the highest standards of safety and quality.",
+    safety_1_title: "Quality",
+    safety_1_desc: "Trusted Quality — Delivering excellence beyond standards.",
+    safety_2_title: "Safety",
+    safety_2_desc: "Safety First — Protecting people and projects at every step.",
+    safety_3_title: "Integrity & Professionalism",
+    safety_3_desc: "Integrity Matters — Building trust through honest work.",
+    mission_eyebrow: "OUR MISSION",
+    mission_title: "Our Mission",
+    mission_desc: "Our mission is to deliver quality products on time and within budget, while building long-term partnerships through innovation, teamwork, and integrity.",
+    mission_list_1: "Trading",
+    mission_list_2: "Project Management",
+    mission_list_3: "Maintenance Delivery",
+    mission_list_4: "Construction",
+    mission_list_5: "Import & Export Services",
+    partners_eyebrow: "PARTNERS",
+    partners_title: "Our Business Partners",
+    partners_desc: "Trusted by leading brands",
+    services_eyebrow: "WHAT WE DO",
+    services_title: "Our Services",
+    services_desc: "We are dedicated to providing the best services across industries, ensuring exceptional quality and customer satisfaction.",
+    svc_1_title: "Trading",
+    svc_1_desc: "Specializing in palm oil, rubber, fertilizer, poultry, and meat.",
+    svc_2_title: "Construction",
+    svc_2_desc: "Expertise in road construction, civil & structural projects.",
+    svc_3_title: "Fabrication & Renovation",
+    svc_3_desc: "High-quality fabrication & building solutions.",
+    svc_4_title: "Asset Maintenance",
+    svc_4_desc: "Comprehensive services to maintain and optimize your assets.",
+    projects_eyebrow: "PORTFOLIO",
+    projects_title: "Our Projects",
+    filter_all: "All",
+    filter_1: "Commodity Trading",
+    filter_2: "Civil & Roadworks",
+    filter_3: "Building & Renovation",
+    filter_4: "Fabrication & Engineering",
+    filter_5: "Asset Maintenance",
+    exp_eyebrow: "PROVEN TRACK",
+    exp_title: "8 Years of Experience",
+    exp_desc: "We have 8 years of proven experience across multiple sectors.",
+    exp_1: "Trading & Export",
+    exp_2: "Construction & Civil Works",
+    exp_3: "Project Management",
+    exp_4: "Maintenance & Asset Care",
+    exp_5: "Fabrication & Engineering",
+    profile_title: "Company Profile",
+    profile_desc: "Discover more about us — download our company profile.",
+    profile_btn: "Download",
+    help_title: "Let's help you!",
+    help_desc: "If you have any questions about our services, projects, or partnerships, feel free to reach out to us.",
+    help_btn: "Contact Us",
+    timeline_eyebrow: "OUR JOURNEY",
+    timeline_title: "About Summary",
+    tl_2017_title: "Inception",
+    tl_2017_desc: "Yahaya Mahmud Enterprise Sdn. Bhd. was established, focusing on trading palm oil and rubber.",
+    tl_2019_title: "Diversification",
+    tl_2019_desc: "Expanded into fertilizer, poultry & meat trading, strengthening supply chain and local market presence.",
+    tl_2021_title: "Construction Division",
+    tl_2021_desc: "Ventured into civil, structural, and building construction, including renovation and fabrication works.",
+    tl_2023_title: "Project Management & Maintenance",
+    tl_2023_desc: "Introduced asset maintenance and project management services, delivering quality with integrity and safety.",
+    faq_eyebrow: "FAQ",
+    faq_title: "Frequently Asked Questions",
+    faq_1_q: "What industries do you serve?",
+    faq_1_a: "We focus on trading Palm Oil, Rubber, Fertilizer, Poultry & Meat, as well as Construction, Project Management, and Maintenance.",
+    faq_2_q: "Do you provide import and export services?",
+    faq_2_a: "Yes, we have extensive experience in local, import, and export trading, supported by more than 35 years of collective expertise.",
+    faq_3_q: "How do you ensure quality and safety?",
+    faq_3_a: "We adhere to over 50 international safety and quality standards, while upholding Islamic business principles.",
+    faq_4_q: "Can you handle large-scale projects?",
+    faq_4_a: "Absolutely. Our project management team and experienced workforce deliver on time and within budget.",
+    faq_5_q: "Where are your operations based?",
+    faq_5_a: "We are headquartered in Malaysia, serving both local and international markets.",
+    solution_eyebrow: "SOLUTIONS",
+    solution_title: "Our Solution",
+    sol_1_title: "Global Reach",
+    sol_1_desc: "Strong trading network connecting local commodities to international markets.",
+    sol_2_title: "Sustainability",
+    sol_2_desc: "Commitment to long-term partnerships and contributions to the communities we serve.",
+    contact_eyebrow: "GET IN TOUCH",
+    contact_title: "Contact Us",
+    contact_name: "Name",
+    contact_email: "Email",
+    contact_phone: "Phone",
+    contact_message: "Message",
+    contact_send: "Send via WhatsApp",
+    footer_desc: "Your trusted partner in trading, construction, and project management.",
+    footer_company: "Company",
+    footer_newsletter: "Newsletter",
+    footer_newsletter_note: "Subscribe to our newsletter & events to stay updated.",
+    footer_subscribe: "Subscribe",
+    footer_contact: "Contact Us",
+    footer_links: "Useful Links",
+    footer_commitment: "Our Commitment",
+    footer_integrity: "Integrity & Safety",
+    footer_integrity_desc: "Honest, compliant, and safety-first in every operation.",
+    footer_quality: "Quality & Reliability",
+    footer_quality_desc: "Consistent results that meet standards and timelines.",
+    cta_title: "Stay Connected With Us",
+    cta_desc: "Get the latest updates on our services, projects, and trading opportunities.",
+  },
+  bm: {
+    nav_about: "Tentang",
+    nav_services: "Perkhidmatan",
+    nav_projects: "Projek",
+    nav_timeline: "Sejarah",
+    nav_faq: "Soalan Lazim",
+    nav_contact: "Hubungi",
+    hero_s1_title: "Komoditi Global Terbaik",
+    hero_s1_desc: "Membekalkan komoditi dipercayai ke seluruh dunia dengan kepakaran import & eksport yang kukuh.",
+    hero_s2_title: "Memacu Perdagangan",
+    hero_s2_desc: "Dari minyak sawit hingga getah, kami menghubungkan sumber tempatan ke pasaran global dengan cekap dan boleh dipercayai.",
+    hero_s3_title: "Membina Tanpa Batas",
+    hero_s3_desc: "Pengurusan projek, pembinaan, dan penyelenggaraan menyeluruh yang membentuk kemajuan dan pertumbuhan.",
+    hero_btn_quote: "Dapatkan Sebutharga",
+    hero_btn_projects: "Lihat Projek",
+    about_eyebrow: "TENTANG KAMI",
+    about_since: "Sejak 2017",
+    about_since_sub: "komited kepada kualiti, keselamatan, dan integriti",
+    about_title: "Yahaya Mahmud Enterprise Sdn. Bhd.",
+    about_desc: "Syarikat ini ditubuhkan pada 25 Ogos 2017 oleh Yahaya Bin Mahmud yang mempunyai gabungan pengalaman dalam perdagangan getah dan minyak sawit, kerja-kerja pembinaan, penyelenggaraan dan pengurusan projek.",
+    about_founder: "Pengasas & CEO",
+    about_btn: "Hubungi Kami",
+    safety_eyebrow: "KECEMERLANGAN",
+    safety_title: "Keselamatan dan Kualiti",
+    safety_desc: "Komitmen kami terhadap integriti dan keselamatan adalah teras segala yang kami lakukan. Kami mematuhi lebih 50 piawaian keselamatan dan kualiti tertinggi.",
+    safety_1_title: "Kualiti",
+    safety_1_desc: "Kualiti Dipercayai — Menyampaikan kecemerlangan melebihi piawaian.",
+    safety_2_title: "Keselamatan",
+    safety_2_desc: "Keselamatan Utama — Melindungi manusia dan projek di setiap langkah.",
+    safety_3_title: "Integriti & Profesionalisme",
+    safety_3_desc: "Integriti Penting — Membina kepercayaan melalui kerja jujur.",
+    mission_eyebrow: "MISI KAMI",
+    mission_title: "Misi Kami",
+    mission_desc: "Misi kami adalah menyampaikan produk berkualiti tepat pada waktunya dan dalam bajet, sambil membina perkongsian jangka panjang melalui inovasi, kerja berpasukan, dan integriti.",
+    mission_list_1: "Perdagangan",
+    mission_list_2: "Pengurusan Projek",
+    mission_list_3: "Penyampaian Penyelenggaraan",
+    mission_list_4: "Pembinaan",
+    mission_list_5: "Perkhidmatan Import & Eksport",
+    partners_eyebrow: "RAKAN KONGSI",
+    partners_title: "Rakan Perniagaan Kami",
+    partners_desc: "Dipercayai oleh jenama terkemuka",
+    services_eyebrow: "PERKHIDMATAN",
+    services_title: "Perkhidmatan Kami",
+    services_desc: "Kami berdedikasi menyediakan perkhidmatan terbaik merentasi industri, memastikan kualiti dan kepuasan pelanggan.",
+    svc_1_title: "Perdagangan",
+    svc_1_desc: "Pengkhususan dalam minyak sawit, getah, baja, ayam, dan daging.",
+    svc_2_title: "Pembinaan",
+    svc_2_desc: "Kepakaran dalam pembinaan jalan, projek sivil & struktur.",
+    svc_3_title: "Fabrikasi & Renovasi",
+    svc_3_desc: "Penyelesaian fabrikasi & pembinaan berkualiti tinggi.",
+    svc_4_title: "Penyelenggaraan Aset",
+    svc_4_desc: "Perkhidmatan menyeluruh untuk mengekalkan dan mengoptimumkan aset anda.",
+    projects_eyebrow: "PORTFOLIO",
+    projects_title: "Projek Kami",
+    filter_all: "Semua",
+    filter_1: "Perdagangan Komoditi",
+    filter_2: "Sivil & Kerja Jalan",
+    filter_3: "Bangunan & Renovasi",
+    filter_4: "Fabrikasi & Kejuruteraan",
+    filter_5: "Penyelenggaraan Aset",
+    exp_eyebrow: "REKOD PRESTASI",
+    exp_title: "8 Tahun Pengalaman",
+    exp_desc: "Kami mempunyai 8 tahun pengalaman terbukti merentasi pelbagai sektor.",
+    exp_1: "Perdagangan & Eksport",
+    exp_2: "Pembinaan & Kerja Sivil",
+    exp_3: "Pengurusan Projek",
+    exp_4: "Penyelenggaraan & Penjagaan Aset",
+    exp_5: "Fabrikasi & Kejuruteraan",
+    profile_title: "Profil Syarikat",
+    profile_desc: "Ketahui lebih lanjut tentang kami — muat turun profil syarikat.",
+    profile_btn: "Muat Turun",
+    help_title: "Jom kami bantu!",
+    help_desc: "Jika ada sebarang pertanyaan mengenai perkhidmatan, projek, atau perkongsian kami, sila hubungi kami.",
+    help_btn: "Hubungi Kami",
+    timeline_eyebrow: "PERJALANAN KAMI",
+    timeline_title: "Ringkasan",
+    tl_2017_title: "Penubuhan",
+    tl_2017_desc: "Yahaya Mahmud Enterprise Sdn. Bhd. ditubuhkan, memfokuskan perdagangan minyak sawit dan getah.",
+    tl_2019_title: "Kepelbagaian",
+    tl_2019_desc: "Berkembang ke perdagangan baja, ayam & daging, mengukuhkan rantaian bekalan dan kehadiran pasaran tempatan.",
+    tl_2021_title: "Bahagian Pembinaan",
+    tl_2021_desc: "Menceburi pembinaan sivil, struktur, dan bangunan, termasuk kerja renovasi dan fabrikasi.",
+    tl_2023_title: "Pengurusan Projek & Penyelenggaraan",
+    tl_2023_desc: "Memperkenalkan penyelenggaraan aset dan pengurusan projek, menyampaikan kualiti dengan integriti dan keselamatan.",
+    faq_eyebrow: "SOALAN LAZIM",
+    faq_title: "Soalan Lazim",
+    faq_1_q: "Industri apa yang anda layani?",
+    faq_1_a: "Kami fokus pada perdagangan Minyak Sawit, Getah, Baja, Ayam & Daging, serta Pembinaan, Pengurusan Projek, dan Penyelenggaraan.",
+    faq_2_q: "Adakah anda menyediakan perkhidmatan import dan eksport?",
+    faq_2_a: "Ya, kami mempunyai pengalaman luas dalam perdagangan tempatan, import, dan eksport, disokong oleh lebih 35 tahun kepakaran kolektif.",
+    faq_3_q: "Bagaimana anda memastikan kualiti dan keselamatan?",
+    faq_3_a: "Kami mematuhi lebih 50 piawaian keselamatan dan kualiti antarabangsa, sambil menegakkan prinsip perniagaan Islam.",
+    faq_4_q: "Bolehkah anda mengendalikan projek berskala besar?",
+    faq_4_a: "Sudah tentu. Pasukan pengurusan projek dan tenaga kerja kami yang berpengalaman menyampaikan tepat pada masanya dan dalam bajet.",
+    faq_5_q: "Di manakah operasi anda berpusat?",
+    faq_5_a: "Kami berpusat di Malaysia, melayani pasaran tempatan dan antarabangsa.",
+    solution_eyebrow: "PENYELESAIAN",
+    solution_title: "Penyelesaian Kami",
+    sol_1_title: "Capaian Global",
+    sol_1_desc: "Rangkaian perdagangan kukuh menghubungkan komoditi tempatan ke pasaran antarabangsa.",
+    sol_2_title: "Kelestarian",
+    sol_2_desc: "Komitmen kepada perkongsian jangka panjang dan sumbangan kepada komuniti yang kami layani.",
+    contact_eyebrow: "HUBUNGI KAMI",
+    contact_title: "Hubungi Kami",
+    contact_name: "Nama",
+    contact_email: "Emel",
+    contact_phone: "Telefon",
+    contact_message: "Mesej",
+    contact_send: "Hantar melalui WhatsApp",
+    footer_desc: "Rakan kongsi dipercayai anda dalam perdagangan, pembinaan, dan pengurusan projek.",
+    footer_company: "Syarikat",
+    footer_newsletter: "Surat Berita",
+    footer_newsletter_note: "Langgan surat berita & acara kami untuk kekal terkini.",
+    footer_subscribe: "Langgan",
+    footer_contact: "Hubungi Kami",
+    footer_links: "Pautan Berguna",
+    footer_commitment: "Komitmen Kami",
+    footer_integrity: "Integriti & Keselamatan",
+    footer_integrity_desc: "Jujur, patuh, dan mengutamakan keselamatan dalam setiap operasi.",
+    footer_quality: "Kualiti & Kebolehpercayaan",
+    footer_quality_desc: "Hasil konsisten yang memenuhi piawaian dan garis masa.",
+    cta_title: "Terus Berhubung Dengan Kami",
+    cta_desc: "Dapatkan kemas kini terbaru tentang perkhidmatan, projek, dan peluang perdagangan kami.",
+  }
+};
+
+function setLang(lang: string) {
+  localStorage.setItem('ymasb-lang', lang);
+  const btn = document.getElementById('langToggle');
+  if (btn) btn.textContent = lang.toUpperCase();
+  const t = translations[lang] || translations.en;
+  document.querySelectorAll<HTMLElement>('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n')!;
+    if (t[key]) el.textContent = t[key];
+  });
+}
+
+function setTheme(theme: string) {
+  localStorage.setItem('ymasb-theme', theme);
+  document.documentElement.setAttribute('data-theme', theme);
+  const moon = document.querySelector('.icon-moon') as HTMLElement;
+  const sun = document.querySelector('.icon-sun') as HTMLElement;
+  if (moon && sun) {
+    moon.style.display = theme === 'light' ? 'none' : 'block';
+    sun.style.display = theme === 'light' ? 'block' : 'none';
+  }
+}
+
+// Init
+const savedLang = localStorage.getItem('ymasb-lang') || 'en';
+const savedTheme = localStorage.getItem('ymasb-theme') || 'dark';
+setTheme(savedTheme);
+setLang(savedLang);
+
+document.getElementById('langToggle')!.addEventListener('click', () => {
+  const current = localStorage.getItem('ymasb-lang') || 'en';
+  setLang(current === 'en' ? 'bm' : 'en');
+});
+
+document.getElementById('themeToggle')!.addEventListener('click', () => {
+  const current = localStorage.getItem('ymasb-theme') || 'dark';
+  setTheme(current === 'dark' ? 'light' : 'dark');
+});
+
+// Hamburger
+const hamburger = document.getElementById('hamburger')!;
+const navLinks = document.getElementById('navLinks')!;
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navLinks.classList.toggle('open');
+  document.body.classList.toggle('nav-mobile-open');
+});
+navLinks.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navLinks.classList.remove('open');
+    document.body.classList.remove('nav-mobile-open');
+  });
+});
+</script>
+
+<style>
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(10,10,15,.7);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--border);
+  transition:background .3s;
+}
+:global(html[data-theme="light"]) nav{background:rgba(255,255,255,.85);border-bottom-color:rgba(0,0,0,.08)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 32px;height:64px}
+.nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo{height:36px;width:auto}
+.nav-brand-text{display:flex;flex-direction:column;line-height:1.3}
+.nav-brand-text strong{font-size:11px;font-weight:800;color:var(--white);letter-spacing:.5px}
+.nav-brand-text span{font-size:9px;font-weight:400;color:var(--muted2)}
+.nav-links{display:flex;gap:28px}
+.nav-links a{font-size:13px;font-weight:500;color:var(--muted2);text-decoration:none;transition:color .2s;letter-spacing:.3px}
+.nav-links a:hover{color:var(--white)}
+.nav-actions{display:flex;align-items:center;gap:8px}
+.toggle-btn{
+  background:var(--bg3);border:1px solid var(--border);border-radius:8px;
+  color:var(--muted2);font-size:12px;font-weight:700;
+  padding:7px 12px;cursor:pointer;transition:.2s;font-family:var(--font);
+  display:flex;align-items:center;gap:4px;
+}
+.toggle-btn:hover{border-color:var(--primary);color:var(--primary)}
+.toggle-btn svg{width:16px;height:16px}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
+.hamburger span{display:block;width:22px;height:2px;background:var(--muted2);border-radius:2px;transition:.3s}
+.hamburger.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.hamburger.active span:nth-child(2){opacity:0}
+.hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+
+@media(max-width:768px){
+  .nav-links{
+    position:fixed;top:64px;left:0;right:0;bottom:0;
+    background:var(--bg);flex-direction:column;align-items:center;justify-content:center;
+    gap:24px;display:none;z-index:99;
+  }
+  :global(html[data-theme="light"]) .nav-links{background:var(--bg)}
+  .nav-links.open{display:flex}
+  .nav-links a{font-size:18px}
+  .hamburger{display:flex}
+  .nav-inner{padding:0 20px}
+}
+</style>
